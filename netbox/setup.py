@@ -15,7 +15,7 @@ setup(
     long_description = readme,
 
     author = 'Roland Planitz',
-    author_email = 'roland@planitz.at'
+    author_email = 'roland@planitz.at',
 
     python_requires = '>= 3.8',
     packages = find_packages(),
