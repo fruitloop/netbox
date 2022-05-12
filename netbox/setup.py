@@ -49,5 +49,7 @@ setup(
         'tablib',
         'tzdata',
         'jsonschema',
+        'whitenoise',
+        'sentry-sdk',
     ],
 )
