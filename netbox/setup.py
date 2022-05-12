@@ -2,17 +2,11 @@
 
 from setuptools import setup, find_packages
 
-# README get's long_description
-from os import path
-here = path.abspath(path.dirname(__file__))
-with open(path.join(here, '../README.md')) as f: readme = f.read()
-
 setup(
     name = 'netbox-pip',
     version = '0.0.2',
 
     description = 'netbox but on pypi',
-    long_description = readme,
 
     author = 'Roland Planitz',
     author_email = 'roland@planitz.at',
