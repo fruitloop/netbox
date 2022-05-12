@@ -322,6 +322,7 @@ INSTALLED_APPS = [
     'wireless',
     'django_rq',  # Must come after extras to allow overriding management commands
     'drf_yasg',
+    'whitenoise',
 ]
 
 # Middleware
@@ -336,6 +337,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'netbox.middleware.ExceptionHandlingMiddleware',
     'netbox.middleware.RemoteUserMiddleware',
     'netbox.middleware.LoginRequiredMiddleware',
@@ -344,6 +346,7 @@ MIDDLEWARE = [
     'netbox.middleware.ObjectChangeMiddleware',
     'django_prometheus.middleware.PrometheusAfterMiddleware',
 ]
+WHITENOISE_USE_FINDERS = True
 
 ROOT_URLCONF = 'netbox.urls'
 
