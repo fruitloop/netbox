@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'netbox-pip',
-    version = '0.0.4',
+    version = '0.0.5',
 
     description = 'netbox but on pypi',
 
@@ -45,6 +45,7 @@ setup(
         'PyYAML',
         'social-auth-app-django',
         'social-auth-core',
+        'django_ssl_auth',
         'svgwrite',
         'tablib',
         'tzdata',
