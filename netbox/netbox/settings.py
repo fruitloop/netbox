@@ -382,7 +382,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # SmartCard Authentication
-USER_DATA_FN = 'netbox.extras.ssl_auth.user_dict_from_cert'
+USER_DATA_FN = 'netbox.authentication.user_dict_from_cert'
 
 # Internationalization
 LANGUAGE_CODE = 'en-us'
