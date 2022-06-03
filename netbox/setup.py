@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'netbox-pip',
-    version = '0.0.7',
+    version = '0.0.8',
 
     description = 'netbox but on pypi',
 
