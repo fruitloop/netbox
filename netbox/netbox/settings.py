@@ -333,7 +333,6 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django_ssl_auth.SSLClientAuthMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -377,12 +376,8 @@ TEMPLATES = [
 # Set up authentication backends
 AUTHENTICATION_BACKENDS = [
     REMOTE_AUTH_BACKEND,
-    'django_ssl_auth.SSLClientAuthBackend',
     'netbox.authentication.ObjectPermissionBackend',
 ]
-
-# SmartCard Authentication
-USER_DATA_FN = 'netbox.authentication.user_dict_from_cert'
 
 # Internationalization
 LANGUAGE_CODE = 'en-us'
